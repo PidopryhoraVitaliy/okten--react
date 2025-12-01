@@ -1,0 +1,15 @@
+li {
+    margin: 15px 5px;
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background: #FFF;
+}
+
+h3, p {
+    margin: 5px;
+}
+
+.wrapper {
+    margin-left: 20px;
+}
