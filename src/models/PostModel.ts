@@ -1,6 +1,6 @@
-export interface TodoModel {
+export interface PostModel {
     userId: number;
     id: number;
     title: string;
-    completed: boolean;
+    body: string;
 }
