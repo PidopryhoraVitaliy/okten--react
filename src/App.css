@@ -1,0 +1,11 @@
+.wrap {
+    max-width: 800px;
+    margin: auto;
+}
+
+.title-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    color: #00A;
+}

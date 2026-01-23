@@ -13,10 +13,10 @@ export const Comments = () => {
 
     return (
         <>
-            <div className='wrap'>
-                <h1>Comments:</h1>
+            <div className='title-wrap'>
+                <h2>Comments:</h2>
             </div>
-            <div className='wrap'>
+            <div className='comments-wrap'>
                 {
                     comments.map((comment: CommentModel) => <Comment key={comment.id} comment={comment}/>)
                 }

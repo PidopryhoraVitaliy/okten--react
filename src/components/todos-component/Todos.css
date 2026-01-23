@@ -1,0 +1,7 @@
+.todos-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+}

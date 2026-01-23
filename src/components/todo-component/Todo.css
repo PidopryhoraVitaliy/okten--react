@@ -1,11 +1,11 @@
-.post {
+.todo {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    width: 100%;
+    /*max-width: 400px;*/
     background-color: #EEE;
 }
 
-.post p {
+.todo p {
     margin: 2px 0;
 }

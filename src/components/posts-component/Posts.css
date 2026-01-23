@@ -1,4 +1,4 @@
-.wrap {
+.posts-wrap {
     display: flex;
     flex-direction: row;
     gap: 2rem;

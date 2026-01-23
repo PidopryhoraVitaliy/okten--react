@@ -4,12 +4,12 @@ import type {CommentModel} from "../../models/CommentModel.ts";
 
 type PropType = { comment: CommentModel; }
 
-export const Comment: FC<PropType> = ({comment: {name, email, body}}) => {
+export const Comment: FC<PropType> = ({comment: {body, likes, user}}) => {
     return (
         <div className={'comment'}>
-            <h4>{name}</h4>
-            <p>{email}</p>
+            <p>user: <b>{user.username}</b></p>
             <p>{body}</p>
+            <p>likes: {likes}</p>
         </div>
     );
 };

@@ -11,11 +11,15 @@ export const Posts = () => {
         loadPosts().then(data => setPosts(data));
     }, []);
 
-    return (
-        <div className='wrap'>
-            {
-                posts.map((post) => <Post key={post.id} post={post}/>)
-            }
-        </div>
+    return (<>
+            <div className='title-wrap'>
+                <h2>Posts:</h2>
+            </div>
+            <div className='posts-wrap'>
+                {
+                    posts.map((post) => <Post key={post.id} post={post}/>)
+                }
+            </div>
+        </>
     );
 };
