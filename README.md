@@ -1,13 +1,15 @@
-#chszHaH9
+#qL0b5uh
 
-Побудувати меню з можливістю переходу на наступні сторінки:
+Побудувати меню, з можливістю переходу на наступні маршрути:
 
-/users
+/users/jsonplaceholder
 
-/posts
+/users/dummyjson
 
-/comments
+/posts/jsonplaceholder
 
-/products
+/posts/dummyjson
 
-Контент на сторінках відсутній. Лише грамотна обробка роутів в двох варіантах (router object  та browser router (необов’язково, але рекомендовано))
+/comments/jsonplaceholder
+
+Контент на сторінках відсутній. Лише грамотна обробка роутів
