@@ -1,11 +1,7 @@
-import type {PostModel} from "../models/PostModel.ts";
-import type {CommentModel} from "../models/CommentModel.ts";
-import type {TodoModel} from "../models/TodoModel.ts";
-import type {PostsResponseModel} from "../models/PostsResponseModel.ts";
-import type {CommentsResponseModel} from "../models/CommentsResponseModel.ts";
-import type {TodosResponseModel} from "../models/TodosResponseModel.ts";
-import type {ProductModel} from "../models/ProductModel.ts";
-import type {ProductsResponseModel} from "../models/ProductsResponseModel.ts";
+import type {PostModel, PostsResponseModel} from "../models/PostModel.ts";
+import type {CommentModel, CommentsResponseModel} from "../models/CommentModel.ts";
+import type {TodoModel, TodosResponseModel} from "../models/TodoModel.ts";
+import type {ProductModel, ProductsResponseModel} from "../models/ProductModel.ts";
 
 const endpointPosts = import.meta.env.VITE_API_BASE_URL + '/posts';
 const endpointComments = import.meta.env.VITE_API_BASE_URL + '/comments';

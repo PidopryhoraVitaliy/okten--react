@@ -10,3 +10,10 @@ export interface PostModel {
     };
     views: number;
 }
+
+export type PostsResponseModel = {
+    posts: PostModel[];
+    total: number;
+    skip: number;
+    limit: number;
+}

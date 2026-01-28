@@ -12,3 +12,9 @@ export interface CommentModel {
 	user: UserModel;
 }
 
+export type CommentsResponseModel = {
+	comments: CommentModel[];
+	total: number;
+	skip: number;
+	limit: number;
+}

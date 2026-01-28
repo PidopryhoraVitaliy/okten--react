@@ -5,3 +5,9 @@ export interface TodoModel {
 	userId: number;
 }
 
+export type TodosResponseModel = {
+    todos: TodoModel[];
+    total: number;
+    skip: number;
+    limit: number;
+}

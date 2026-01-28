@@ -11,25 +11,25 @@ export interface ProductModel {
 	brand: string;
 	sku: string;
 	weight: number;
-	dimensions: Dimensions;
+	dimensions: DimensionsModel;
 	warrantyInformation: string;
 	shippingInformation: string;
 	availabilityStatus: string;
-	reviews: Review[];
+	reviews: ReviewModel[];
 	returnPolicy: string;
 	minimumOrderQuantity: number;
-	meta: Meta;
+	meta: MetaModel;
 	images: string[];
 	thumbnail: string;
 }
 
-interface Dimensions {
+export interface DimensionsModel {
 	width: number;
 	height: number;
 	depth: number;
 }
 
-interface Review {
+export interface ReviewModel {
 	rating: number;
 	comment: string;
 	date: string;
@@ -37,9 +37,16 @@ interface Review {
 	reviewerEmail: string;
 }
 
-interface Meta {
+export interface MetaModel {
 	createdAt: string;
 	updatedAt: string;
 	barcode: string;
 	qrCode: string;
+}
+
+export interface ProductsResponseModel {
+	products: ProductModel[];
+	total: number;
+	skip: number;
+	limit: number;
 }

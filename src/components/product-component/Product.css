@@ -6,13 +6,29 @@
     background-color: #EEE;
 }
 
+.product h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-img {
+    display: flex;
+    /*align-items: center;*/
+    flex-wrap: wrap;
+}
+
+.product .thumbnail {
+    width: 5%;
+}
+
 .product p {
     margin: 2px 0;
 }
 
 .product:hover {
     border: 1px solid #AAA;
-    background-color: #DDD;
+    background-color: #EFE;
 }
 
 .product h4 {
@@ -20,5 +36,20 @@
 }
 
 .product img {
-    width: 10%;
+    width: 20%;
+}
+
+.details-meta {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+}
+
+.details-meta img {
+    width: auto;
+    height: 60px;
 }
