@@ -1,0 +1,11 @@
+.jsonplaceholder-post {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 60%;
+    background-color: #EEE;
+}
+
+.jsonplaceholder-post * {
+    margin: 10px 0;
+}

@@ -1,0 +1,11 @@
+.jsonplaceholder-comment {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 500px;
+    background-color: #EEE;
+}
+
+.jsonplaceholder-comment * {
+    margin: 10px 0;
+}

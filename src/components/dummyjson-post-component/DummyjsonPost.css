@@ -1,0 +1,11 @@
+.dummyjson-post {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 60%;
+    background-color: #EEE;
+}
+
+.dummyjson-post * {
+    margin: 10px 0;
+}
