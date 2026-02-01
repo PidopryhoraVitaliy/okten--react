@@ -1,0 +1,11 @@
+.user {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 20%;
+    background-color: #EEE;
+}
+
+.user p {
+    margin: 2px 0;
+}

@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
