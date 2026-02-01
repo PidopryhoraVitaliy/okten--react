@@ -1,14 +1,17 @@
 import './Posts.css';
 import type {PostModel} from "../../models/PostModel.ts";
 import {useEffect, useState} from "react";
-import {loadPosts} from "../../services/api.service.ts";
+// import {loadPosts} from "../../services/api.service.ts";
 import {Post} from "../post-component/Post.tsx";
+import {getAll} from "../../services/general.api.service.ts";
+import type {BaseResponceModel} from "../../models/BaseResponceModel.ts";
 
 export const Posts = () => {
     const [posts, setPosts] = useState<PostModel[]>([]);
 
     useEffect(() => {
-        loadPosts().then(data => setPosts(data));
+        // loadPosts().then(data => setPosts(data));
+        getAll<BaseResponceModel & PostModel[]>('/posts').then(data => setPosts(data));
     }, []);
 
     return (
