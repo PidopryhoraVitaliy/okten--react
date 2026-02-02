@@ -10,6 +10,7 @@ export const UserCarts = () => {
     const {userId} = useParams();
     const [carts, setCarts] = useState<CartModel[]>([]);
 
+    // https://dummyjson.com/carts/user/33
     useEffect(() => {
         if (userId) {
             // https://dummyjson.com/carts/user/33
