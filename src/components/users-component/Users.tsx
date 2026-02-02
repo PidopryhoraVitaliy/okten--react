@@ -4,13 +4,11 @@ import type {UserModel} from "../../models/UserModel.ts";
 import {User} from "../user-component/User.tsx";
 import {getAll} from "../../services/general.api.service.ts";
 import type {BaseResponceModel} from "../../models/BaseResponceModel.ts";
-// import {loadUsers} from "../../services/api.service.ts";
 
 export const Users = () => {
     const [users, setUsers] = useState<UserModel[]>([]);
 
     useEffect(() => {
-        // loadUsers().then(data => setUsers(data));
         getAll<BaseResponceModel & { users: UserModel[] }>('/users').then(data => setUsers(data.users));
     }, []);
 

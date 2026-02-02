@@ -1,11 +1,18 @@
-.post {
+.cart {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     width: 90%;
     background-color: #EEE;
+    display: flex;
+    flex-direction: column;
 }
 
-.post p {
+.cart p {
     margin: 2px 0;
+}
+
+.cart button {
+    margin: 10px 0;
+    height: 30px;
 }

@@ -1,0 +1,23 @@
+.products-item-wrap {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #EEE;
+    display: flex;
+}
+
+.products-item-info-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.products-item-wrap p {
+    margin: 2px 0;
+}
+
+.products-item-wrap img {
+    margin: 10px 0;
+    width: 10%;
+}

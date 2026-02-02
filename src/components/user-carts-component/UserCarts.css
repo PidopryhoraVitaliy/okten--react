@@ -1,5 +1,6 @@
-.posts-wrap {
+.carts-wrap {
     display: flex;
-    gap: 10px;
     flex-direction: column;
+    gap: 20px;
+    width: 100%;
 }
