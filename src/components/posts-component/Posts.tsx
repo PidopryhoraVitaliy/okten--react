@@ -11,7 +11,7 @@ export const Posts = () => {
 
     useEffect(() => {
         // loadPosts().then(data => setPosts(data));
-        getAll<BaseResponceModel & PostModel[]>('/posts').then(data => setPosts(data));
+        getAll<BaseResponceModel & { posts: PostModel[] }>('/posts').then(data => setPosts(data.posts));
     }, []);
 
     return (
