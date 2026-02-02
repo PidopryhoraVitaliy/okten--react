@@ -3,6 +3,7 @@ import './App.css'
 function App() {
     return (
         <>
+            <h2>lessons/lesson-3/state forward</h2>
             <h2>#knZgVIwvqd</h2>
             <p>
                 На головній сторінці вивести всіх користувачів з будь-якого апі.
