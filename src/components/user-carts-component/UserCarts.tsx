@@ -3,7 +3,6 @@ import {type FC, useEffect, useState} from "react";
 import {getAll} from "../../services/general.api.service.ts";
 import type {BaseResponceModel} from "../../models/BaseResponceModel.ts";
 import type {CartModel} from "../../models/CartModel.ts";
-import {Link} from "react-router-dom";
 import {Cart} from "../cart-component/Cart.tsx";
 
 type PropType = {
@@ -23,7 +22,6 @@ export const UserCarts:FC<PropType> = ({userId}) => {
 
     return (
         <>
-            <Link to={'/users'}>users</Link>
             <div className='title-wrap'>
                 <h2>Carts:</h2>
             </div>

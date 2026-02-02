@@ -8,7 +8,7 @@ type PropType = { user: UserModel; }
 export const User: FC<PropType> = ({user}) => {
     const navigate = useNavigate();
     const handleOnClick = () => {
-        navigate('/carts/user/'+user.id);
+        navigate('/users/' + user.id + '/carts');
     };
 
     return (
@@ -18,12 +18,8 @@ export const User: FC<PropType> = ({user}) => {
                 <p>user: <b>{user.firstName} {user.lastName}</b> ({user.username})</p>
                 <p>phone: {user.phone}</p>
                 <p>email: {user.email}</p>
-                <p>city: {user.address.city}</p>
-                <p>company: {user.company.name}</p>
             </div>
-            {/*https://dummyjson.com/carts/user/33*/}
             <button onClick={handleOnClick}>Show user carts</button>
-            {/*<Link to={'/carts/user/'+user.id} state={user}>Show user carts</Link>*/}
         </div>
     );
 };
