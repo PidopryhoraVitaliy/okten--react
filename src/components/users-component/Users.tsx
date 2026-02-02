@@ -11,7 +11,7 @@ export const Users = () => {
 
     useEffect(() => {
         // loadUsers().then(data => setUsers(data));
-        getAll<BaseResponceModel & UserModel[]>('/users').then(data => setUsers(data));
+        getAll<BaseResponceModel & { users: UserModel[] }>('/users').then(data => setUsers(data.users));
     }, []);
 
     return (
