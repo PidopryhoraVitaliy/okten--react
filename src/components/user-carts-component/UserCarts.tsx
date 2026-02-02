@@ -12,7 +12,7 @@ export const UserCarts = () => {
 
     // https://dummyjson.com/carts/user/33
     useEffect(() => {
-        getAll<BaseResponceModel & { carts: CartModel[] }>('/carts/user/'+userId).then(data => setCarts(data.carts));
+        getAll<BaseResponceModel & { carts: CartModel[] }>('/carts/user/' + userId).then(data => setCarts(data.carts));
     }, [userId]);
 
     return (
@@ -21,9 +21,15 @@ export const UserCarts = () => {
             <div className='title-wrap'>
                 <h2>Carts:</h2>
             </div>
-            <div className='carts-wrap'>
+            <div>
                 {
-                    carts.map((cart) => <Cart key={cart.id} cart={cart}/>)
+                    (carts.length === 0)
+                        ? (<div>empty / no data on user's carts</div>)
+                        : (<div className='carts-wrap'>
+                            {
+                                carts.map((cart) => <Cart key={cart.id} cart={cart}/>)
+                            }
+                        </div>)
                 }
             </div>
         </>
