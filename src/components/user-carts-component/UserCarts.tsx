@@ -1,13 +1,16 @@
 import './UserCarts.css';
-import {useEffect, useState} from "react";
+import {type FC, useEffect, useState} from "react";
 import {getAll} from "../../services/general.api.service.ts";
 import type {BaseResponceModel} from "../../models/BaseResponceModel.ts";
 import type {CartModel} from "../../models/CartModel.ts";
-import {Link, useParams} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Cart} from "../cart-component/Cart.tsx";
 
-export const UserCarts = () => {
-    const {userId} = useParams();
+type PropType = {
+    userId: string;
+}
+
+export const UserCarts:FC<PropType> = ({userId}) => {
     const [carts, setCarts] = useState<CartModel[]>([]);
 
     useEffect(() => {
