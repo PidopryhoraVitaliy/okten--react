@@ -7,9 +7,8 @@ import type {UserModel, UsersResponseModel} from "../models/UserModel.ts";
 //     return response.posts;
 // }
 
-export const loadUsers = async (): Promise<UserModel[]> => {
-    // https://dummyjson.com/users?limit=5&skip=10
-    const response: UsersResponseModel = await fetch(urls.users.allUsers).then(response => response.json());
+export const loadUsers = async (limit: string, skip: string): Promise<UserModel[]> => {
+    const response: UsersResponseModel = await fetch(urls.users.getUsers(limit, skip)).then(response => response.json());
     return response.users;
 }
 

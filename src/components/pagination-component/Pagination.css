@@ -1,0 +1,11 @@
+.pagination-wrapper {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pagination-wrapper button {
+    width: 80px;
+    height: 30px;
+}
