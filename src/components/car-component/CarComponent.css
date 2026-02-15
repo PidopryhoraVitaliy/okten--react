@@ -1,0 +1,15 @@
+.car-wrapper * {
+    margin: 0;
+}
+
+.car-wrapper {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 20%;
+}
+
+.car-wrapper:hover {
+    background-color: lightgray;
+}
+
