@@ -4,7 +4,7 @@ import {useFetch} from "./hooks/useFetch.ts";
 
 function App() {
 
-    const {todos} = useFetch<{ limit: number, todos: ITodo[] }>('https://dummyjson.com/todos', {limit: 0, todos: []});
+    const {todos} = useFetch<{ limit: number, total: number, todos: ITodo[] }>('https://dummyjson.com/todos', {limit: 0, total: 0, todos: []});
 
     return (
         <>
