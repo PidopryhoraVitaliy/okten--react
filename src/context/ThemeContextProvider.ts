@@ -5,7 +5,7 @@ type ContentValueType = {
     changeTheme: (theme: string) => void;
 }
 
-const defaultValue = {
+const defaultValue: ContentValueType = {
     theme: 'light',
     changeTheme: (theme: string) => {
         console.log(theme)

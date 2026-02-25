@@ -5,3 +5,18 @@
 .item-wrapper {
     margin: 10px;
 }
+
+.item-wrapper button {
+    margin: 0 5px;
+}
+
+.theme-dark {
+    background-color: darkgrey;
+}
+.theme-light {
+    background-color: rgb(200, 255, 230);
+}
+
+.theme-target {
+    padding: 10px;
+}
