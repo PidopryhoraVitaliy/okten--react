@@ -6,7 +6,7 @@ import {useAppSelector} from "../../redux/hooks/useAppSelector.tsx";
 import {useAppDispatch} from "../../redux/hooks/useAppDispatch.tsx";
 
 export const Users = () => {
-    const {users} = useAppSelector(({userSlice}) => userSlice);
+    const {users, loadState} = useAppSelector(({userSlice}) => userSlice);
     const dispatch = useAppDispatch();
 
     useEffect(() => {
@@ -23,6 +23,7 @@ export const Users = () => {
             <div className='title-wrap'>
                 <h2>Users:</h2>
             </div>
+            {!loadState && <div>Loading...</div>}
             <div className='users-wrap'>
                 {
                     users.map((user) => <User key={user.id} user={user}/>)
