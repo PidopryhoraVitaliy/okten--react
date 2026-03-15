@@ -1,19 +1,21 @@
 import './Users.css';
 import {User} from "../user-component/User.tsx";
-import {useAppSelector, userSliceActions} from "../../main.tsx";
-import {useDispatch} from "react-redux";
 import {useEffect} from "react";
+import {userSliceActions} from "../../redux/slices/userSlice/userSlice.ts";
+import {useAppSelector} from "../../redux/hooks/useAppSelector.tsx";
+import {useAppDispatch} from "../../redux/hooks/useAppDispatch.tsx";
 
 export const Users = () => {
     const {users} = useAppSelector(({userSlice}) => userSlice);
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
 
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/users/")
-            .then((response) => response.json())
-            .then((data) => {
-                dispatch(userSliceActions.loadUsers(data));
-            })
+        // fetch("https://jsonplaceholder.typicode.com/users/")
+        //     .then((response) => response.json())
+        //     .then((data) => {
+        //         dispatch(userSliceActions.loadUsers(data));
+        //     })
+        dispatch(userSliceActions.loadUsers());
     }, []);
 
     return (
